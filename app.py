@@ -10,6 +10,33 @@ from samples.sample_controls import SAMPLE_CONTROLS, SAMPLE_LABELS
 load_dotenv()
 
 st.set_page_config(page_title="SOX Control Triage Tool", page_icon="🛡️", layout="wide")
+st.markdown("""
+<style>
+    .main { padding-top: 1.5rem; }
+    h1 { color: #1B3A6B; font-weight: 700; }
+    h2 { color: #1B3A6B; }
+    h3 { color: #1B3A6B; }
+    div[data-testid="stVerticalBlock"] div[data-testid="stVerticalBlock"] {
+        border-radius: 8px;
+    }
+    div[data-testid="metric-container"] {
+        background-color: #FFFFFF;
+        border: 1px solid #E0E4EA;
+        border-radius: 8px;
+        padding: 1rem;
+    }
+    .stButton > button {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+    }
+    div[data-testid="stExpander"] {
+        border: 1px solid #E0E4EA;
+        border-radius: 8px;
+    }
+    footer { visibility: hidden; }
+</style>
+""", unsafe_allow_html=True)
 def _init_state():
     defaults = {
         "control_text": "",
