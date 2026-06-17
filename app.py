@@ -50,7 +50,17 @@ def _init_state():
 
 
 _init_state()
-st.title("🛡️ SOX Control Triage Tool")
+st.markdown("""
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 0.5rem;">
+    <div style="font-size: 1.4rem; font-weight: 700; color: #F9FAFB; letter-spacing: -0.5px;">
+        NexTrend<span style="color: #3B82F6;">.</span>
+    </div>
+    <div style="width: 1px; height: 30px; background-color: #1F2937;"></div>
+    <div style="font-size: 1.8rem; font-weight: 700; color: #F9FAFB;">
+        🛡️ SOX Control Triage Tool
+    </div>
+</div>
+""", unsafe_allow_html=True)
 st.caption(
     "Paste a SOX internal control description and get a structured audit analysis. "
     "Powered by the Claude API."
