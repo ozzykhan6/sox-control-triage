@@ -2,7 +2,7 @@
 # SOX Control Triage Tool
 
 An AI-assisted audit tool that analyzes SOX internal control descriptions and returns structured output: control type, framework alignment, risk rating, a plain-English summary, and recommended test procedures. Built with Streamlit and the Anthropic Claude API.
-
+🔗 **Live app:** https://nextrend-sox-triage.streamlit.app
 [Screenshot coming soon]
 
 ---
